@@ -1,3 +1,11 @@
+**/build_class/
+**/build_classes/
+**/local_input/
+**/local_output/**
+!**/local_output/
+!**/local_output/part-r-00000
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
