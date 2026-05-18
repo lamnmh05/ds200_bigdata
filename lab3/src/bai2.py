@@ -11,10 +11,6 @@ def get_data_path(file_name):
 def parse_movie(line):
     try:
         parts = line.strip().split(",", 2)
-
-        if len(parts) < 3:
-            return None
-
         movie_id = parts[0]
         genres = parts[2].split("|")
 
@@ -26,10 +22,6 @@ def parse_movie(line):
 def parse_rating(line):
     try:
         parts = line.strip().split(",")
-
-        if len(parts) < 4:
-            return None
-
         movie_id = parts[1]
         rating = float(parts[2])
 
@@ -50,7 +42,7 @@ def to_genre_rating(row):
     return result
 
 
-sc = SparkContext("local[*]", "Genre Rating RDD")
+sc = SparkContext("local[*]", "Genre Rating")
 sc.setLogLevel("ERROR")
 
 movies = sc.textFile(get_data_path("movies.txt")) \
