@@ -1,6 +1,6 @@
 from pyspark.sql import functions as F
 
-from lab4.src.utils import create_spark, print_table, read_csv
+from utils import create_spark, print_table, read_csv
 
 
 spark = create_spark("Orders By Year Month Analysis")

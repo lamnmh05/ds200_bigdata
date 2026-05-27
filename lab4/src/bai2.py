@@ -1,4 +1,4 @@
-from lab4.src.utils import create_spark, print_table, read_csv
+from utils import create_spark, print_table, read_csv
 
 
 spark = create_spark("Order_Customer_Seller Overview")
