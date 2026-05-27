@@ -1,4 +1,4 @@
-from lab4.src.utils import create_spark, read_csv
+from utils import create_spark, read_csv
 
 
 TABLES = [
