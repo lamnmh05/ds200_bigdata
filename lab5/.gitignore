@@ -3,17 +3,17 @@
 __pycache__/
 *.py[cod]
 
-data/*.mp4
+# data/*.mp4
 data/*.avi
 data/*.mov
 data/*.mkv
 !data/.gitkeep
 
-models/*.pt
+# models/*.pt
 models/*.onnx
 !models/.gitkeep
 
 outputs/*.db
-outputs/*.sqlite
-outputs/*.jsonl
+# outputs/*.sqlite
+# outputs/*.jsonl
 !outputs/.gitkeep
